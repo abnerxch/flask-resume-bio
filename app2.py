@@ -3,7 +3,6 @@ from readInfo import readData
 from flask import Flask, jsonify
 import sys
 import yaml
-from app import lectura
 
 app = Flask(__name__)
 
