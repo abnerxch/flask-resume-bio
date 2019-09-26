@@ -1,13 +1,19 @@
-from readInfo import readData
-from flask import Flask, jsonify
+import sys
+import yaml
+from flask import Flask
 
 app = Flask(__name__)
 
+with open('info.yml') as stream:
+    d = yaml.safe_load(stream)
+
+info = d['info']
+# "concatenate" host, ip and path
+print('{name}@{age}:{email}'.format(**d['info']))
 
 @app.route('/')
 def admin():
-    for section in readData.cfg:
-        return jsonify(section)
+    return '{name}@{age}:{email}'.format(**d['info'])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+        app.run(debug=True)
