@@ -1,11 +1,13 @@
-import yaml
-from flask import Flask
+from readInfo import readData
+from flask import Flask, jsonify
+
+app = Flask(__name__)
 
 
-with open("info.yml", 'r') as ymlfile:
-    cfg = yaml.load(ymlfile)
+@app.route('/')
+def admin():
+    for section in readData.cfg:
+        return jsonify(section)
 
-for section in cfg:
-    print(section)
-print(cfg['mysql'])
-print(cfg['other'])
+if __name__ == '__main__':
+    app.run(debug=True)
