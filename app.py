@@ -1,6 +1,8 @@
 import yaml
+from flask import Flask
 
-with open("config.yml", 'r') as ymlfile:
+
+with open("info.yml", 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
 
 for section in cfg:
