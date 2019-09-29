@@ -39,9 +39,11 @@
     </div>
     <div class="wrapper scroll-wrapper">
         <div class="top-text">
-            <p class="text-title desktop-view">Abner</p>
-            <p class="text-title desktop-view">Xocop Chacach</p>
-            <p class="text-title mobile-view">Abner Xocop Chacach</p>
+
+            <p class="text-title desktop-view"> {{data['myname']}}</p>
+            <p class="text-title desktop-view">{{data['lastname']}}</p>
+            <p class="text-title mobile-view">{{data['myname']}} {{data['lastname']}}</p>
+
             <div>
                 <a target="_blank" href="https://github.com/abnerxch">
                     <img class="title-logo" src="static/images/github.svg">
@@ -92,7 +94,7 @@
 
             <p class="text-content">Let's get in touch!</p>
 
-            <p class="text-content">Rishabh Bhardwaj</p>
+            <p class="text-content">{{data['myname']}} {{data['lastname']}}</p>
 
             <p class="text-content"><a href="timeline">For more about me, my timeline, read on here.</a></p>
 

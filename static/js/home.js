@@ -5,8 +5,8 @@ $(function() {
       "><span class='caret'>$</span> work: hardware-software interaction, computer, android<br/> ^100" +
       "><span class='caret'>$</span> hobbies: read, solo travel, blogging<br/> ^300" +
       "><span class='caret'>$</span> alias: bob <br/>" +
-      "><span class='caret'>$</span> highlight:  <a href='https://focus.cathopic.com/vida-interior/a-jesus-se-llega-por-maria/'>A Jesús se llega por María</a>, <a href='/projects/lifehacks'>app with >750K installs</a><br/>" +
-      "><span class='caret'>$</span> job: finance assitant at <a href='https://www.kemik.gt/'>kemik.com</a><br/> ^100"
+      "><span class='caret'>$</span> highlight:  <a href='https://focus.cathopic.com/vida-interior/a-jesus-se-llega-por-maria/'>A Jesús se llega por María</a><br/>" +
+      "><span class='caret'>$</span> job: finance assistant at <a href='https://www.kemik.gt/'>kemik.com</a><br/> ^100"
     ],
     showCursor: true,
     cursorChar: '_',

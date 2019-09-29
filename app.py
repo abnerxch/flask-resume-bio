@@ -6,20 +6,22 @@ import  datetime, time
 
 app = Flask(__name__)
 
-try:
-    app.config['GA_TRACKING_ID'] = os.environ['GA_TRACKING_ID']
-except:
-    print('Tracking ID not set')
+#try:
+ #   app.config['GA_TRACKING_ID'] = os.environ['GA_TRACKING_ID']
+#except:
+ #   print('Tracking ID not set')
 
-with open('info.yml') as stream:
-    d = yaml.safe_load(stream)
+#with open('info.yml') as stream:
+data = yaml.load(open('info.yml'))
 
-info = d['info']
+print(data['myname'])
+
+#info = data['info']
 
 @app.route('/')
 def index():
-    age = int((datetime.date.today() - datetime.date(1995, 4, 22)).days / 365)
-    return render_template('home.html', age=age)
+    age = int((datetime.date.today() - datetime.date(1997, 9, 29)).days / 365)
+    return render_template('home.html', data = data)
 
 @app.route('/info')
 def info():
