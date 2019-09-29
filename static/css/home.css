@@ -107,6 +107,17 @@ ul li a {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
   margin: auto;
 }
+
+#imagen .imagen {
+  position: relative;
+  background: #FFFFFF;
+  width: 80%;
+  height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px #FFFFFF;
+  margin: auto;
+}
+
 #terminal .terminal .window-title {
   background: linear-gradient(top, #dedede, #c0c0c0);
   width: calc(100% - 16px);

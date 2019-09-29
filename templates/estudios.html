@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/timeline.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4 l8">
+            <div class="col s12 m4 l8">
+                <span class="date">Universidad</span>
+                <ul>
+                        <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">school</i>
+                            <a href="https://ufm.edu/Portal" class="title">[Universidad Francisco Marroquín]</a>
+                        </div>
+                        <span class="content"> 2018 - 2021 </span>
+                        <span class="content"> Computer Science Engineering </span>
+                        <span class="content">Nuestra misión es la enseñanza y difusión de los principios éticos,
+                            jurídicos y económicos de una sociedad de personas libres y responsables.
+                        </span>
+                    </li>
+                </ul>
+
+                <span class="date">Diversificado</span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">school</i>
+                            <a href="http://colegiosimeoncanas.com/colegio-chimaltenango/" class="title">[Colegio Simeón Cañas]</a>
+                        </div>
+                        <span class="content"> 2013 - 2015 </span>
+                        <span class="content"> Perito en Informática y Bachillerato Industrial </span>
+                        <span class="content">Trabajamos comprometidos con la niñez y juventud, fomentando en ellos liderazgo
+                            profesional, principios cristianos y excelencia académica que nos da más de 50 años de experiencia.</span>
+                    </li>
+                </ul>
+
+                <span class="date">Básicos</span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">school</i>
+                            <a href="https://www.facebook.com/mayakindvannu/" class="title">[Liceo Nuevo Horizonte]</a>
+                        </div>
+                        <span> 2010 - 2012 </span>
+
+                        <span class="content">Centro educativo privado apoyado por ONG belga Mayakind.
+                            Fundada en el año 2008, con sede oficial en San Juan Comalapa.
+                            Caracterizada por fomentar valores y educación de calidad.</span>
+                    </li>
+                </ul>
+
+
+                <span class="date">Primaria</span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">school</i>
+                            <a href="https://www.facebook.com/mayakindvannu/" class="title">[Liceo Nuevo Horizonte]</a>
+                        </div>
+                        <span>2007 - 2009 </span>
+                        <span class="content">Centro educativo privado apoyado por ONG belga Mayakind.
+                            Fundada en el año 2008, con sede oficial en San Juan Comalapa.
+                            Caracterizada por fomentar valores y educación de calidad.</span>
+                    </li>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">school</i>
+                            <a href="https://www.facebook.com/ajpopolivzw/"
+                               class="title">[Centro Educativo Ajpopoli' Ak'wala']</a>
+                        </div>
+                        <span>2004 - 2006 </span>
+                        <span class="content"> Centro educativo privado con sede en San Juan Comalapa. </span>
+                    </li>
+                </ul>
+
+                <span class="date">Otros estudios</span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">school</i>
+                            <a href="https://academiaeuropea.com/" class="title">[Academia Europea]</a>
+                        </div>
+                        <span>2019 </span>
+                        <span class="content">Centro de enseñanza de idiomas ubicado en la ciudad de Guatemala.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+
+    <!--<li><a href="/projects/" class="title">[]</a>
+        <span class="content"></span></li>-->
+    {% endblock %}

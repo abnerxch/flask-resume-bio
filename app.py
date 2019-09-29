@@ -23,18 +23,19 @@ def index():
     age = int((datetime.date.today() - datetime.date(1997, 9, 29)).days / 365)
     return render_template('home.html', data = data)
 
-@app.route('/info')
-def info():
-    return render_template("layout.html")
+@app.route('/estudios')
+def estudios():
+    return render_template("estudios.html")
 
-@app.route("/academica")
-def academica():
+@app.route("/experiencia")
+def experiencia():
     #return '{name}@{age}:{email}'.format(**d['info'])
-    return render_template("academica.html")
+    return render_template("experiencia.html")
 
-@app.route('/laboral')
-def laboral():
-    return render_template("laboral.html")
+@app.route('/about')
+def about():
+    age = int((datetime.date.today() - datetime.date(1997, 9, 29)).days / 365)
+    return render_template("about.html", data = data)
 
 @app.route('/contacto')
 def contacto():

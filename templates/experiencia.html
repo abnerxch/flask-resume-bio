@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/timeline.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4 l8">
+            <div class="col s12 m4 l8">
+                <span class="date">2018</span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">android</i>
+                            <a href="https://www.facebook.com/kuriex/" class="title">[Kuriex]</a>
+                        </div>
+                        <span class="content"> Programador Jr. </span>
+                        <span class="content">Realicé tareas de revisión y mantemineto de software institucional.
+                            Colaboré con algunas tareas de diseño web en la plataforma WordPress.
+                        </span>
+                    </li>
+                </ul>
+
+                <span class="date">2016 - 2017 </span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">work</i>
+                            <a href="https://www.kemik.gt/" class="title">[Kémik]</a>
+                        </div>
+                        <span class="content"> Asistente de Finanzas </span>
+                        <span class="content">Realicé tareas de seguimiento de estados de resultados, pago de facturas,
+                        verificación de crédito proveedores, manejo de caja chica y facturación de clientes.</span>
+                    </li>
+                </ul>
+
+                <span class="date">2015</span>
+                <ul>
+                    <li>
+                        <div class="icon-title">
+                            <i class="tiny material-icons">android</i>
+                            <a href="http://stmedic.com/paises/guatemala/" class="title">[ST Medic]</a>
+                        </div>
+                        <span class="content">Práctica supervisada </span>
+                        <span class="content">Realicé actividades de mantemiento de equipos de cómputo.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+    <!--<li><a href="/projects/" class="title">[]</a>
+        <span class="content"></span></li>-->
+    {% endblock %}
